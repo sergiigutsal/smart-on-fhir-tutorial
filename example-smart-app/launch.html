@@ -26,42 +26,8 @@
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script>
       FHIR.oauth2.authorize({
-        '8985175b-1f21-4848-846d-3fdea3fd445e': 'df7c5a17-52dd-4c88-8a32-cdfb557ba758',
-        'scope':  '
-                    system/AllergyIntolerance.read
-                    system/Appointment.read
-                    system/Binary.read
-                    system/CarePlan.read
-                    system/Condition.read
-                    system/Contract.read
-                    system/Device.read
-                    system/DiagnosticReport.read
-                    system/DocumentReference.read
-                    system/Encounter.read
-                    system/Goal.read
-                    system/Immunization.read
-                    system/MedicationAdministration.read
-                    system/MedicationOrder.read
-                    system/MedicationStatement.read
-                    system/Observation.read 
-                    launch 
-                    online_access 
-                    openid profile 
-                    system/Patient.read
-                    system/Person.read
-                    system/Practitioner.read
-                    system/Procedure.read
-                    system/ProcedureRequest.read
-                    system/RelatedPerson.read
-                    system/Schedule.read
-                    system/Slot.read
-                    system/AllergyIntolerance.write
-                    system/Appointment.write
-                    system/Condition.write
-                    system/DocumentReference.write
-                    system/MedicationStatement.write
-                    system/Patient.write
-                '
+        'client_id': '8985175b-1f21-4848-846d-3fdea3fd445e',
+        'scope':  'system/Patient.read system/Observation.read launch online_access openid profile'
       });
     </script>
     <div class="spinner">
